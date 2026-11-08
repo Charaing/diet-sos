@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1f7a5a">
+<meta name="description" content="다이어트 중 생기는 400가지 상황과 연구 근거 기반 해결법">
+<title>다이어트 SOS</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥗</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <span class="logo">🥗</span>
+    <div>
+      <h1>다이어트 SOS</h1>
+      <p class="sub">지금 겪는 상황을 찾으면, 근거 있는 해결법을 알려드려요</p>
+    </div>
+  </div>
+  <div class="searchbox">
+    <input id="q" type="search" placeholder="예: 야식, 가짜 배고픔, 정체기, 회식…" autocomplete="off" aria-label="상황 검색">
+  </div>
+  <nav class="chips" id="cats" aria-label="카테고리"></nav>
+</header>
+
+<main>
+  <section class="quick" id="quick">
+    <h2>지금 이런가요?</h2>
+    <div class="quick-grid" id="quickGrid"></div>
+  </section>
+  <div class="bar">
+    <span id="count"></span>
+    <div class="bar-actions">
+      <button id="favToggle" class="ghost">★ 저장한 것만</button>
+      <button id="randomBtn" class="ghost">🎲 랜덤 팁</button>
+    </div>
+  </div>
+  <ul class="list" id="list"></ul>
+  <p class="empty" id="empty" hidden>찾는 상황이 없어요. 다른 단어로 검색해 보세요.</p>
+</main>
+
+<div class="sheet-backdrop" id="backdrop" hidden></div>
+<article class="sheet" id="sheet" hidden aria-modal="true" role="dialog">
+  <button class="close" id="closeSheet" aria-label="닫기">✕</button>
+  <div id="sheetBody"></div>
+</article>
+
+<footer class="foot">
+  <p>⚠️ 이 앱은 일반적인 건강 정보이며 의학적 진단·치료를 대신하지 않습니다. 질환이 있거나 임신 중이거나 약을 복용 중이라면 의사·영양사와 상의하세요.</p>
+  <p>폭식·구토·극단적 굶기가 반복되거나 마음이 많이 힘들다면 혼자 버티지 마세요. 정신건강상담전화 <b>1577-0199</b> · 자살예방 상담 <b>109</b></p>
+  <p><a href="#" id="showRefs">📚 참고 문헌 전체 보기</a></p>
+</footer>
+
+<script src="data/refs.js"></script>
+<script src="data/cats.js"></script>
+<script src="data/d01.js"></script>
+<script src="data/d02.js"></script>
+<script src="data/d03.js"></script>
+<script src="data/d04.js"></script>
+<script src="data/d05.js"></script>
+<script src="data/d06.js"></script>
+<script src="data/d07.js"></script>
+<script src="data/d08.js"></script>
+<script src="data/d09.js"></script>
+<script src="data/d10.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

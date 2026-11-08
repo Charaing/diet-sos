@@ -1,0 +1,10 @@
+{
+  "name": "다이어트 SOS",
+  "short_name": "다이어트SOS",
+  "description": "다이어트 중 생기는 400가지 상황과 근거 기반 해결법",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f6f7f4",
+  "theme_color": "#1f7a5a",
+  "lang": "ko"
+}
